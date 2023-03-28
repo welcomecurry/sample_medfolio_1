@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap');
+
+.accordion {
+  width: 30rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.content {
+  color:white;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #E7F5F7;
+  color:#536163;
+  padding: 1.2rem;
+  cursor: pointer;
+  border-radius: 2.5rem;
+}
+
+.accordion-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.accordion-header span {
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.1s ease-in-out; /* add transition property for icon rotation */
+}
+
+.accordion-header .icon-open {
+  /* transform: rotate(45deg); initial rotation for open icon */
+}
+
+.accordion-header .icon-close {
+  transform: rotate(45deg); /* initial rotation for close icon */
+}
+
+.accordion-header.open .icon-open {
+  transform: rotate(0deg); /* rotate open icon when expanded */
+}
+
+.accordion-header.open .icon-close {
+  transform: rotate(0deg); /* rotate close icon when collapsed */
+}
+
+.accordion-content {
+  background-color: #B4C2C4;
+  line-height: 1.5;
+  font-size: 16px;
+  max-height: 0;
+  color:#536163;
+  overflow: hidden;
+  transition: max-height 0.5s linear; /* add transition property for content opening */
+}
+
+.accordion.open .accordion-content {
+  max-height: 500px; /* adjust max-height to fit your content */
+}
+
+
+  .button {
+    display: inline-block;
+    background-color: #E7F5F7;
+    color: #536163;
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+    text-decoration: none;
+    margin: 0.5rem;
+  }
+
+  .button--flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    border-radius: 5rem;
+    background-color: #E7F5F7;
+  }
+
+  .technologies__icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: 0.3s;
+  }
+
+  .open-folder {
+    transform: rotate(45deg);
+  }
+
+  @media (max-width: 736px) {
+    .accordion {
+      width: 85%;
+    }
+}
