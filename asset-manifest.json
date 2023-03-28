@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sample_medfolio_1/static/css/main.1eb4808c.css",
+    "main.js": "/sample_medfolio_1/static/js/main.2c95f165.js",
+    "static/js/787.c1112931.chunk.js": "/sample_medfolio_1/static/js/787.c1112931.chunk.js",
+    "index.html": "/sample_medfolio_1/index.html",
+    "main.1eb4808c.css.map": "/sample_medfolio_1/static/css/main.1eb4808c.css.map",
+    "main.2c95f165.js.map": "/sample_medfolio_1/static/js/main.2c95f165.js.map",
+    "787.c1112931.chunk.js.map": "/sample_medfolio_1/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1eb4808c.css",
+    "static/js/main.2c95f165.js"
+  ]
+}
